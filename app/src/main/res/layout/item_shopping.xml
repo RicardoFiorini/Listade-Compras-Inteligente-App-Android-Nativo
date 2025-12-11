@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:id="@+id/tvCategoryHeader"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#E0E0E0"
+
+        android:padding="8dp"
+
+        android:text="Category"
+
+        android:textStyle="bold"
+
+        android:visibility="visible" />
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+
+        android:padding="12dp"
+
+        android:orientation="horizontal">
+
+
+
+        <CheckBox
+
+            android:id="@+id/cbItem"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:layout_marginStart="8dp"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:id="@+id/tvItemName"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Ingredient"
+
+                android:textSize="16sp"
+
+                android:textColor="#000" />
+
+
+
+            <TextView
+
+                android:id="@+id/tvMeasure"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="1 kg"
+
+                android:textSize="12sp"
+
+                android:textColor="#666" />
+
+        </LinearLayout>
+
+
+
+        <ImageButton
+
+            android:id="@+id/btnDelete"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:src="@android:drawable/ic_menu_delete"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:contentDescription="Deletar"/>
+
+
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+
+        android:background="#EEE"/>
+
+</LinearLayout>
